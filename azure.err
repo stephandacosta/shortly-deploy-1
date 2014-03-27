@@ -1,0 +1,24 @@
+Thu Mar 27 2014 11:42:20 GMT-0700 (PDT):
+{ [Error: Cannot find user.]
+  stack: [Getter/Setter],
+  __frame: 
+   { name: 'createSite',
+     line: 383,
+     file: '/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js',
+     prev: 
+      { name: '__4',
+        line: 200,
+        file: '/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js',
+        prev: undefined,
+        active: false,
+        offset: 50,
+        col: 12 },
+     active: false,
+     offset: 20,
+     col: 21 },
+  rawStack: [Getter] }
+Error: Cannot find user.
+    at createSite__3 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:301:34)
+    at createSite (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js:403:21)
+    at __4 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js:250:12)
+
