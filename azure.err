@@ -1,24 +1,30 @@
-Thu Mar 27 2014 11:42:20 GMT-0700 (PDT):
-{ [Error: Cannot find user.]
+Thu Mar 27 2014 12:30:19 GMT-0700 (PDT):
+{ [Error: Unable to locate site named http://shortlysteph.azurewebsites.net/]
   stack: [Getter/Setter],
   __frame: 
-   { name: 'createSite',
-     line: 383,
-     file: '/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js',
+   { name: 'lookupSiteNameAndWebSpace__18',
+     line: 821,
+     file: '/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js',
      prev: 
-      { name: '__4',
-        line: 200,
-        file: '/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js',
-        prev: undefined,
+      { name: 'ensureRepositoryUri__15',
+        line: 750,
+        file: '/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js',
+        prev: [Object],
         active: false,
-        offset: 50,
-        col: 12 },
+        offset: 3,
+        col: 19 },
      active: false,
-     offset: 20,
-     col: 21 },
+     offset: 12,
+     col: 4 },
   rawStack: [Getter] }
-Error: Cannot find user.
-    at createSite__3 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:301:34)
-    at createSite (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js:403:21)
-    at __4 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site._js:250:12)
+Error: Unable to locate site named http://shortlysteph.azurewebsites.net/
+    at ___ (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:817:20)
+    at ___ (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/node_modules/streamline/lib/callbacks/runtime.js:85:13)
+    at ___ (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:460:131)
+    at __tryCatch (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/node_modules/streamline/lib/callbacks/runtime.js:141:4)
+    at ___ (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:460:67)
+    at getSites__6 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:460:33)
+    at lookupSiteNameAndWebSpace__18 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:833:4)
+    at ensureRepositoryUri__15 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/websites/websitesclient._js:753:19)
+    at __2 (/Users/hackreactor/.nvm/v0.10.15/lib/node_modules/azure-cli/lib/commands/site.log._js:93:26)
 
