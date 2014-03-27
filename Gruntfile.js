@@ -28,6 +28,11 @@ module.exports = function(grunt) {
     },
 
     uglify: {
+      my_target: {
+        files: {
+          'public/client/uglied-concatted.js': ['public/client/concatted.js']
+        }
+      }
     },
 
     jshint: {
@@ -101,7 +106,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'concat'
+    'concat', 'uglify'
   ]);
 
   grunt.registerTask('upload', function(n) {
